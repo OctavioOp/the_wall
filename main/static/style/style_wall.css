@@ -1,0 +1,19 @@
+#bod{
+    background: url('https://www.criptotendencias.com/wp-content/uploads/2020/07/Cadena-de-suministro-del-caf%C3%A9-colombiano-de-la-marca-1850-Coffee-ser%C3%A1-rastreada-utilizando-la-tecnolog%C3%ADa-blockchain-de-IBM.jpg') no-repeat center top; 
+    background-size: cover;
+    height: 100%;
+}
+
+#box h3, #box label{
+    color: white;
+}
+
+#box{
+    width: 350px;
+    height: 250px;
+    background-color: black;
+    padding:25px;
+    margin-top: 150px;
+    margin-left: 80px;
+    border-radius: 10px;
+}
