@@ -7,5 +7,5 @@ urlpatterns = [
     path('login',views.login),
     path('create_message',views.post_message),
     path('delete/<id>', views.delete_message),
-    path('create_comment/<id>',views.post_comment),
+    path('create_comment/<id_m>',views.post_comment),
 ]

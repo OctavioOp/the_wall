@@ -7,9 +7,11 @@ import bcrypt
 
 @login_required
 def index(request):
+    comment_all = Comments.objects.all()
     messages = Messages.objects.all()
     data = {
-        'messages':messages
+        'messages':messages,
+        'comments':comment_all
     }
     return render(request, 'index.html', data)
     
