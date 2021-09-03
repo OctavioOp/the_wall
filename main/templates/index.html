@@ -72,10 +72,13 @@
                 <ul>
                 {% for cm in comments %}
                 <h6>{{ cm.updated_at}}</h6>
+                {% if cm.message_c.id == ms.id%}
                 <p>{{ cm.user_c.first_name}} {{ cm.user_c.last_name}} comment: </p>
                 <p>{{ cm.comment }}</p>
+                {% endif %}
                 {% empty %}
                 <li>Sorry, no comments in the box :(</li>
+                
                 {% endfor%}
                 </ul>
                 <form action="/create_comment/{{ms.id}}" method="POST">
